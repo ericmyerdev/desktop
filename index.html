@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Desktop</title>
+</head>
+
+<body class="" id="body">
+    
+    <nav class="em" id="bar">
+        <ul class="em" id="nav-left">
+        </ul>
+        
+        <span id="date" onmousewheel="switchTime()"></span>
+        <ul class="em" id="nav-right">
+            <li class="btn" onclick="openMenu()"><i id="info" class="fa fa-dot-circle-o" aria-hidden="true"></i></li>
+            <li class="btn" onclick="openMenu()"><i id="net" class="fa fa-wifi" aria-hidden="true"></i></li>
+            <li class="btn" onclick="openMenu()"><i id="audio" class="fa fa-volume-off" aria-hidden="true"><span> 0</span>%</i></li>
+            <li class="btn" onclick="openMenu()"><i id="stat" class="fa fa-bar-chart" aria-hidden="true"></i></li>
+            <li class="btn" onclick="openMenu()"><i id="power" class="fa fa-power-off open" aria-hidden="true"></i></li>
+        </ul>
+    </nav>
+    
+    <main class="em" id="desktop" onclick="closeAll()">
+        <img class="em" id="wallpaper-img" src="/images/gameboy-24.png" alt="">
+        <div class="em menu right" id="powermenu">
+            <ul class="em" id="powermenu_options">
+                <li id="shutdown"><i class="material-icons">power_settings_new</i></li>
+                <li id="reboot"><i class="material-icons">autorenew</i></li>
+                <li id="lock"><i class="material-icons">lock</i></li>
+                <li id="settings"><i class="material-icons">settings</i></li>
+            </ul>
+
+            <div class="em" id="powermenu_general">
+                <div id="general_user">
+                    <span id="name">John Doe</span>
+                    <img src="/images/gameboy-24.png" alt="">
+                </div>
+
+                <ul class="em" id="general_options">
+                    <li>Check for updates</li>
+                    <li>Desktop Preferences</li>
+                    <li>System Preferences</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="em menu right" id="infomenu">
+            <ul class="em infoEm" id="notifs">
+                <li class="infoEm">
+                    <ul class="em infoEm infoGp" id="textGp">
+                        <div class="infoEm notifHead">
+                            <i class="fas fa-comment-dots"></i> Text Messages
+                        </div>
+                        <li>
+                            <span class="msgName">
+                                <span class="notifTime">3:43</span>
+                                Jane Doe |
+                            </span>
+                            We are just arriving
+                        </li>
+                        <li>
+                            <span class="msgName">
+                                <span class="notifTime">5:08</span>
+                                Uncle Iroh |
+                            </span>
+                            If you look for the light, you can often...
+                        </li>
+                        <li>
+                            <span class="msgName">
+                                <span class="notifTime">8:03</span>
+                                Toph |
+                            </span>
+                            I never thought I would miss the taste...
+                        </li>
+                    </ul>
+
+                    <ul class="em infoEm infoGp" id="redditGp">
+                        <div class="infoEm notifHead">
+                            <i class="fab fa-reddit-alien"></i> Reddit
+                        </div>
+                        <li>
+                            <span class="notifTime">8:13</span>
+                            u/Supahstar42 replied to your comment in r/Reddit
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/8e92285593.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
